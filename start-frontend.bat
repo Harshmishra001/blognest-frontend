@@ -1,0 +1,3 @@
+@echo off
+echo Starting frontend on port 3005...
+npx vite --port 3005
