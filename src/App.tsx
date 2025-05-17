@@ -10,7 +10,8 @@ import Update from './pages/Update'
 import Write from './pages/Write'
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  // State is set but used only for event handling
+  const [, setIsAuthenticated] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {

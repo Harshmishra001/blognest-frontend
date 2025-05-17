@@ -1,10 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Middle = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const heroRef = useRef(null);
 
   // Premium, stunning high-quality images for a professional look
   const images = [
@@ -39,7 +37,7 @@ const Middle = () => {
     }, 6000);
 
     // Fade-in animation on load
-    setIsVisible(true);
+    // Animation handled by CSS now
 
     // Intersection Observer for scroll animations
     const observer = new IntersectionObserver(
